@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description"
+        content="Política de Privacidade do aplicativo Silagem Admin - Painel administrativo da densidade de silagem." />
+    <meta name="theme-color" content="#1C4A39" />
+    <title>Política de Privacidade – Silagem Admin</title>
+    <style>
+        :root {
+            --forest: #1F5138;
+            --forest-dark: #1C4A39;
+            --forest-light: #9AAC79;
+            --sand: #F6F1E7;
+            --card: #FFFFFF;
+            --ink: #1B2B22;
+            --muted: #5C6B60;
+            --line: #E3D8C8;
+            --accent: #2E7D5B;
+            --shadow: 0 6px 18px rgba(27, 43, 34, 0.08);
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+                "Helvetica Neue", Arial, sans-serif;
+            background-color: var(--sand);
+            color: var(--ink);
+            line-height: 1.6;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        .container {
+            max-width: 860px;
+            margin: 0 auto;
+            padding: 24px 18px 60px;
+        }
+
+        /* HERO */
+        .hero {
+            background: linear-gradient(135deg, var(--forest) 0%, var(--forest-dark) 55%, var(--forest-light) 100%);
+            border-radius: 28px;
+            padding: 36px 28px;
+            color: #fff;
+            margin-bottom: 28px;
+            box-shadow: var(--shadow);
+        }
+
+        .hero .badge {
+            display: inline-block;
+            background: rgba(255, 255, 255, 0.18);
+            padding: 6px 14px;
+            border-radius: 999px;
+            font-size: 12px;
+            font-weight: 700;
+            letter-spacing: 0.5px;
+            text-transform: uppercase;
+            margin-bottom: 14px;
+        }
+
+        .hero h1 {
+            font-size: clamp(24px, 4vw, 34px);
+            font-weight: 800;
+            line-height: 1.2;
+            margin-bottom: 10px;
+        }
+
+        .hero p {
+            font-size: 15px;
+            color: #E3F4EA;
+            max-width: 560px;
+        }
+
+        .hero .updated {
+            display: block;
+            margin-top: 16px;
+            font-size: 13px;
+            color: #C8E2D5;
+        }
+
+        /* CARDS */
+        .card {
+            background: var(--card);
+            border: 1px solid var(--line);
+            border-radius: 20px;
+            padding: 22px 24px;
+            margin-bottom: 16px;
+            box-shadow: var(--shadow);
+        }
+
+        .card h2 {
+            font-size: 18px;
+            font-weight: 800;
+            color: var(--ink);
+            margin-bottom: 12px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .card h2 .num {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 28px;
+            height: 28px;
+            border-radius: 50%;
+            background: var(--forest);
+            color: #fff;
+            font-size: 14px;
+            font-weight: 800;
+            flex-shrink: 0;
+        }
+
+        .card p {
+            color: var(--muted);
+            margin-bottom: 10px;
+        }
+
+        .card p:last-child {
+            margin-bottom: 0;
+        }
+
+        .card ul {
+            list-style: none;
+            padding: 0;
+            margin: 10px 0 0;
+        }
+
+        .card ul li {
+            position: relative;
+            padding-left: 22px;
+            color: var(--ink);
+            margin-bottom: 8px;
+        }
+
+        .card ul li::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 10px;
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background: var(--accent);
+        }
+
+        strong {
+            color: var(--ink);
+            font-weight: 700;
+        }
+
+        a {
+            color: var(--accent);
+            font-weight: 600;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        /* CONTACT BOX */
+        .contact-box {
+            background: #F6F1E7;
+            border-radius: 14px;
+            padding: 16px 18px;
+            margin-top: 12px;
+            border-left: 4px solid var(--forest);
+        }
+
+        .contact-box .name {
+            font-weight: 800;
+            color: var(--ink);
+            font-size: 16px;
+        }
+
+        .contact-box .role {
+            color: var(--muted);
+            font-size: 14px;
+        }
+
+        /* FOOTER */
+        footer {
+            text-align: center;
+            color: var(--muted);
+            font-size: 13px;
+            padding: 20px 0 0;
+            border-top: 1px solid var(--line);
+            margin-top: 24px;
+        }
+
+        footer strong {
+            color: var(--forest);
+        }
+
+        @media (max-width: 480px) {
+            .hero {
+                padding: 28px 20px;
+                border-radius: 22px;
+            }
+
+            .card {
+                padding: 18px 18px;
+                border-radius: 16px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <!-- HERO -->
+        <header class="hero">
+            <span class="badge">Silagem Admin</span>
+            <h1>Política de Privacidade</h1>
+            <p>
+                Transparência total sobre como o aplicativo trata as informações
+                inseridas por você ao utilizar o painel de densidade de silagem.
+            </p>
+            <span class="updated">Última atualização: <span id="update-date"></span></span>
+        </header>
+
+        <!-- 1. INTRODUÇÃO -->
+        <section class="card">
+            <h2><span class="num">1</span> Introdução</h2>
+            <p>
+                Esta Política de Privacidade descreve como o aplicativo
+                <strong>Silagem Admin</strong> trata as informações inseridas por você
+                ao utilizar o painel administrativo de densidade de silagem. Nosso
+                compromisso é garantir transparência e segurança no uso dos dados.
+            </p>
+        </section>
+
+        <!-- 2. DADOS COLETADOS -->
+        <section class="card">
+            <h2><span class="num">2</span> Dados coletados</h2>
+            <p>
+                O aplicativo armazena localmente, apenas no seu dispositivo, as
+                seguintes informações:
+            </p>
+            <ul>
+                <li>Configurações da sonda (ex.: diâmetro em milímetros);</li>
+                <li>Medições registradas (profundidade, massa, volume e densidade calculada);</li>
+                <li>Data e hora de cada registro salvo.</li>
+            </ul>
+            <p style="margin-top: 12px;">
+                Nenhum dado pessoal sensível (como nome, CPF, e-mail ou localização)
+                é coletado automaticamente.
+            </p>
+        </section>
+
+        <!-- 3. USO DAS INFORMAÇÕES -->
+        <section class="card">
+            <h2><span class="num">3</span> Uso das informações</h2>
+            <p>As informações armazenadas são utilizadas exclusivamente para:</p>
+            <ul>
+                <li>Exibir métricas, histórico e análises dentro do aplicativo;</li>
+                <li>Gerar relatórios em CSV e PDF quando solicitado por você;</li>
+                <li>Manter suas preferências entre sessões de uso.</li>
+            </ul>
+        </section>
+
+        <!-- 4. ARMAZENAMENTO -->
+        <section class="card">
+            <h2><span class="num">4</span> Armazenamento e segurança</h2>
+            <p>
+                Todos os dados ficam armazenados localmente no dispositivo,
+                utilizando o <strong>AsyncStorage</strong>. Não há envio automático
+                para servidores externos, nem compartilhamento com terceiros. A
+                exportação de relatórios só ocorre mediante ação explícita do
+                usuário.
+            </p>
+        </section>
+
+        <!-- 5. COMPARTILHAMENTO -->
+        <section class="card">
+            <h2><span class="num">5</span> Compartilhamento de dados</h2>
+            <p>
+                O aplicativo <strong>não compartilha, vende ou transfere</strong>
+                seus dados para terceiros. Arquivos exportados (CSV/PDF) são
+                gerados sob sua responsabilidade e enviados apenas pelos canais
+                que você escolher.
+            </p>
+        </section>
+
+        <!-- 6. DIREITOS DO USUÁRIO -->
+        <section class="card">
+            <h2><span class="num">6</span> Direitos do usuário</h2>
+            <p>Você pode, a qualquer momento:</p>
+            <ul>
+                <li>Remover medições individualmente pelo histórico;</li>
+                <li>Limpar todo o histórico salvo no aplicativo;</li>
+                <li>Desinstalar o aplicativo, o que apaga todos os dados locais.</li>
+            </ul>
+        </section>
+
+        <!-- 7. ALTERAÇÕES -->
+        <section class="card">
+            <h2><span class="num">7</span> Alterações nesta política</h2>
+            <p>
+                Esta política pode ser atualizada periodicamente para refletir
+                melhorias no aplicativo. Recomendamos revisá-la sempre que houver
+                uma nova versão. A data da última atualização estará sempre
+                indicada no topo desta página.
+            </p>
+        </section>
+
+        <!-- 8. CONTATO -->
+        <section class="card">
+            <h2><span class="num">8</span> Contato</h2>
+            <p>
+                Em caso de dúvidas sobre esta Política de Privacidade, entre em
+                contato com o responsável pelo projeto:
+            </p>
+            <div class="contact-box">
+                <div class="name">Ozeias Meira Santos de Souza</div>
+                <div class="role">Especialista em arquitetura de sistema</div>
+            </div>
+        </section>
+
+        <footer>
+            &copy; <span id="year"></span> <strong>Silagem Admin</strong> — Todos os direitos reservados.
+        </footer>
+    </div>
+
+    <script>
+        // Data de atualização e ano dinâmicos
+        const today = new Date();
+        const formatted = today.toLocaleDateString("pt-BR", {
+            day: "2-digit",
+            month: "long",
+            year: "numeric",
+        });
+        document.getElementById("update-date").textContent = formatted;
+        document.getElementById("year").textContent = today.getFullYear();
+    </script>
+</body>
+
+</html>
